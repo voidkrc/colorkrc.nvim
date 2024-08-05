@@ -11,23 +11,23 @@ local code_groups = {
   Variable = { fg = palette.text, bg = palette.none },
   Identifier = { link = "Variable" },
   ["@variable"] = { link = "Variable" },
-  ["@variable.member"] = { fg = palette.blue0, bg = palette.none },
-  ["@variable.builtin"] = { fg = palette.yellow1, bg = palette.none },
+  ["@variable.member"] = { fg = palette.blue, bg = palette.none },
+  ["@variable.builtin"] = { fg = palette.violet, bg = palette.none },
   ["@property"] = { link = "@variable.member" },
 
   -- Constants
-  Constant = { fg = palette.orange0, bg = palette.none, bold = true },
+  Constant = { fg = palette.orange, bg = palette.none },
   ["@constant"] = { link = "Constant" },
-  ["@constant.builtin"] = { link = "@constant" },
+  ["@constant.builtin"] = { fg = palette.orange, bg = palette.none, bold = true },
 
   -- Operators
-  Operator = { fg = palette.pink0, bg = palette.none },
+  Operator = { fg = palette.pink, bg = palette.none },
   ["@operator"] = { link = "Operator" },
 
   -- Types
-  Type = { fg = palette.violet, bg = palette.none, italic = true },
+  Type = { fg = palette.pink_white, bg = palette.none, italic = true },
   ["@type"] = { link = "Type" },
-  ["@type.builtin"] = { fg = palette.violet, bg = palette.none, italic = true, bold = true },
+  ["@type.builtin"] = { fg = palette.violet, bg = palette.none, bold = true },
 
   -- Strings
   String = { fg = palette.green, bg = palette.none },
@@ -38,7 +38,7 @@ local code_groups = {
   ["@number"] = { link = "Number" },
 
   -- Booleans
-  Boolean = { fg = palette.orange0, bg = palette.none },
+  Boolean = { fg = palette.orange, bg = palette.none },
   ["@boolean"] = { link = "Boolean" },
 
   -- Keywords
@@ -52,8 +52,15 @@ local code_groups = {
   --["@constructor"] = { fg = palette.purple0, bg = palette.none },
 
   -- Functions
-  Function = { fg = palette.yellow1, bg = palette.none, bold = true },
+  Function = { fg = palette.yellow, bg = palette.none, bold = true },
   ["@function"] = { link = "Function" },
+
+  PreProc = { fg = palette.yellow, bg = palette.none },
+
+  -- Diagnostics
+  DiagnosticError = { fg = palette.red, bg = palette.none, bold = true },
+  DiagnosticWarn = { fg = palette.lightyellow, bg = palette.none },
+  DiagnosticInfo = { fg = palette.cyan, bg = palette.none },
 }
 
 return code_groups
