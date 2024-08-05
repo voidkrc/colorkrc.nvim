@@ -8,7 +8,8 @@ local default_palette = {
   purple0 = "#a992cd",
   violet = "#b294bb",
 
-  pink0 = "#ddc5e3",
+  pink0 = "#c6a7c9",
+  pink2 = "#571a5c",
 
   -- Blue
   blue0 = "#81a2be",

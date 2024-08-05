@@ -7,8 +7,13 @@ local editor_groups = {
   Visual = { bg = palette.blue0 },
   VisualLineMode = { link = "Visual" },
   VisualMode = { link = "Visual" },
+  Special = { fg = palette.pink0, bg = palette.none, bold = true },
+
+  Cursor = { fg = palette.none, bg = palette.text },
+  CursorLine = { fg = palette.none, bg = palette.gray1 },
 
   LineNr = { fg = palette.gray1, bg = palette.none },
+  StatusLine = { fg = palette.gray1, bg = palette.blue0 },
 
   PMenu = { fg = palette.gray0, bg = palette.gray1 },
   PMenuSbar = { bg = palette.none },

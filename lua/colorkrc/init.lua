@@ -6,8 +6,9 @@ local M = {}
 function M.get_groups()
   local editor_groups = require("colorkrc.groups.editor")
   local code_groups = require("colorkrc.groups.code")
+  local cmp_groups = require("colorkrc.groups.cmp")
 
-  return vim.tbl_deep_extend("error", editor_groups, code_groups)
+  return vim.tbl_deep_extend("error", editor_groups, code_groups, cmp_groups)
 end
 
 ---@return nil
